@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameMode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#daf0ff"
+    tools:context=".GameModeActivity">
+
+    <EditText
+        android:id="@+id/homeScreenTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="none"
+        android:text="Word Sudoku"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_of_title"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left_vertical_button"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_vertical_button"
+        app:layout_constraintTop_toTopOf="@id/guideline_top_of_title"
+        />
+
+    <EditText
+        android:id="@+id/setGameMode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:inputType="none"
+        android:text="Set Game Mode"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_top_of_listen_button"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left_vertical_button"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_vertical_button"
+        app:layout_constraintTop_toTopOf="@id/guideline_bottom_of_title"
+        />
+
+    <Button
+        android:id="@+id/listening"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#33B5E5"
+        android:text="Listening Comprehension"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_of_listen"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left_vertical_button"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_vertical_button"
+        app:layout_constraintTop_toTopOf="@id/guideline_top_of_listen_button"
+        />
+
+    <Button
+        android:id="@+id/reading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#33B5E5"
+        android:text="Reading Comprehension"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_of_read"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left_vertical_button"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_vertical_button"
+        app:layout_constraintTop_toTopOf="@id/guideline_bottom_of_listen"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left_vertical_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right_vertical_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_of_listen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_of_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_of_listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_of_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_of_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

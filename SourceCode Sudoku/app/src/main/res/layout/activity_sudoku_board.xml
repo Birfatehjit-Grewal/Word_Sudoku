@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SudokuBoardActivity"
+    android:orientation="vertical"
+    android:background="#daf0ff"
+    android:id="@+id/sudokuBoard"
+    >
+
+    <TextView
+        android:id="@+id/difficultyMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:paddingTop="20sp" />
+
+
+    <TableLayout
+        android:id="@+id/board_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_weight="10"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:stretchColumns="*">
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingBottom="10sp"
+        />
+    <Button
+        android:id="@+id/reRoll"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#33B5E5"
+        android:text="New Board" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingBottom="10sp"
+        />
+    <TableLayout
+        android:id="@+id/word_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:stretchColumns="*"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_weight="15">
+
+    </TableLayout>
+
+
+</LinearLayout>
