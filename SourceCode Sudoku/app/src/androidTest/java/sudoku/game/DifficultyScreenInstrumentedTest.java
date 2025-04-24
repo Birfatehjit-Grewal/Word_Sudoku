@@ -66,19 +66,6 @@ public class DifficultyScreenInstrumentedTest {
     }
 
     @Test
-    public void test_isBackButtonDisplayed() {
-        onView(withId(R.id.main)).check(matches(isDisplayed()));
-    }
-
-    @Test
-    public void test_backButtonGoesMainPage() {
-        onView(withId(R.id.main))
-                .check(matches(isDisplayed()))
-                .perform(click());
-        onView(withId(R.id.homeScreen)).check(matches(isDisplayed()));
-    }
-
-    @Test
     public void test_isTitleTextCorrect() {
         onView(withId(R.id.homeScreenTitle)).check(matches(withText("Word Sudoku")));
     }

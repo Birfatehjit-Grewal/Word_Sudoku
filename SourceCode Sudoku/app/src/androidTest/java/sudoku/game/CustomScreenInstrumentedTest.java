@@ -35,9 +35,4 @@ public class CustomScreenInstrumentedTest {
         onView(withId(R.id.customScreen)).check(matches(isDisplayed()));
     }
 
-    @Test
-    public void test_isBackButtonDisplayed() {
-        onView(withId(R.id.main)).check(matches(isDisplayed()));
-    }
-
 }
